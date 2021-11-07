@@ -40,3 +40,13 @@
 .workcontainer .carousel .left img{
     flex: 2;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .workcontainer .carousel{
+        height: 100%;
+    }
+    .workcontainer .carousel .left div p{
+        font-size: 12px;
+    }
+}
