@@ -1,0 +1,123 @@
+@import url("../../global.css");
+
+.intro {
+  background-color: white;
+  display: flex;
+}
+
+.intro .left {
+  flex: 0.5;
+  overflow: hidden;
+}
+
+.intro .left .imageContainer {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  overflow: hidden;
+}
+
+.intro .left .imageContainer img {
+  width: 90%;
+}
+
+.intro .right {
+  flex: 0.5;
+  position: relative;
+}
+
+.intro .right .wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro .right .wrapper h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+.intro .right .wrapper h2 {
+  font-size: 35px;
+}
+
+.intro .right .wrapper h3 {
+  font-size: 30px;
+}
+
+.intro .right .wrapper h3 span {
+  font-size: inherit;
+  color: cornflowerblue;
+}
+
+.intro .right a {
+  position: absolute;
+  bottom: 90px;
+  left: 40%;
+}
+
+.intro .right a .image {
+  font-size: 50px;
+  animation: arrowBlink 1s infinite;
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .into .left{
+    height: 900px;
+    flex: 2;
+  }
+  .intro .left .imageContainer {
+    width: 700px;
+    height: 600px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    float: right;
+  }
+  .intro .left .right {
+    flex: 1;
+  }
+
+  .intro .right .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .intro .right a {
+    top: 66%;
+  }
+
+  .intro .right .wrapper h1 {
+    font-size: 40px;
+    margin: 10px 0;
+  }
+
+  .intro .right .wrapper h3 {
+    font-size: 20px;
+  }
+}

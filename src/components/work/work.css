@@ -1,0 +1,37 @@
+@import url("../../global.css");
+.workcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.workcontainer h1{
+    font-size: 50px;
+}
+
+.workcontainer .carousel{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  justify-content:space-evenly;
+  -webkit-box-shadow: 1px 2px 15px -1px #000000;
+  box-shadow: 1px 2px 15px -1px #000000;
+  border-radius: 10px;
+  padding: 20px
+}
+
+.workcontainer .carousel .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.workcontainer .carousel .left div{
+    flex: 1;
+}
+.workcontainer .carousel .left img{
+    flex: 2;
+}

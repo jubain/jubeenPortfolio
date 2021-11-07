@@ -1,0 +1,47 @@
+@import url("./../global.css");
+.modelContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 380px;
+  height: 600px;
+  border-radius: 10px;
+  z-index: 10;
+  align-self: center;
+  top: 50px;
+  left: 20px;
+  background-color: white;
+  -webkit-box-shadow: 1px 2px 15px -1px #000000;
+  box-shadow: 1px 2px 15px -1px #000000;
+}
+
+.modelContainer .imageContainer {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.modelContainer .imageContainer .closeModel{
+position: absolute;
+top: 0px;
+right: 10px;
+}
+
+.modelContainer .imageContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.modelContainer .descContainer {
+  padding: 5px 15px 5px 15px;
+  font-size: small;
+  line-height: 30px;
+}
+
+.modelContainer .buttonContainer {
+  width: 60%;
+  align-self: center;
+  padding: 10px 0 10px 0;
+}
