@@ -32,7 +32,7 @@ const data = [
 
 export default function Work() {
   return (
-    <div className="workcontainer">
+    <div className="workcontainer" id='works'>
         <h1>WORKS</h1>
       <Carousel plugins={["arrows", "infinite"]}>
         {data.map((item) => (
