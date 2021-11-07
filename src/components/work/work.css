@@ -32,6 +32,11 @@
 .workcontainer .carousel .left div{
     flex: 1;
 }
+.workcontainer .carousel .left div button{
+    background-color: var(--mainColor);
+    color: white;
+}
+
 .workcontainer .carousel .left img{
     flex: 2;
 }

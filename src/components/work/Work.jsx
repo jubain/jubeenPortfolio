@@ -41,7 +41,7 @@ export default function Work() {
             <div className="left">
               <div>
                 <p>{item.desc}</p>
-                <button>Link</button>
+                <button type="button" class="btn" onClick={()=>{window.open(item.link,"_blank")}}>Link</button>
               </div>
               <img src={item.img} />
             </div>
