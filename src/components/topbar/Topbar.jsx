@@ -10,7 +10,7 @@ function Topbar({ menuOpen, setmenuOpen }) {
             {console.log(menuOpen)}
             <div className='wrapper'>
                 <div className='left'>
-                    <a href='#intro' className='logo'>Me.</a>
+                    <a href='#intro' className='logo'>JA</a>
                     <div className='itemContainer'>
                         <PersonIcon className='icon' />
                         <span>07842583541</span>
