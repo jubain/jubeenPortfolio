@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   position: absolute;
   width: 380px;
-  height: 600px;
+  height: 450px;
   border-radius: 10px;
   z-index: 10;
   align-self: center;
@@ -47,4 +47,14 @@ right: 10px;
   padding: 10px 0 10px 0;
   background-color: var(--mainColor);
   color: white;
+}
+
+@media only screen and (max-width: 375px) {
+  .modelContainer {
+    left: 0;
+    width: 90%;
+    left: 15px;
+    top: 100px;
+    padding: 10px 5px 10px 5px;
+  }
 }
