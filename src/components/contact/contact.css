@@ -2,6 +2,9 @@
 .contact {
   text-align: center;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .contact h1 {
   font-size: 50px;
@@ -103,7 +106,6 @@
 
 @media only screen and (max-width: 425px){
   .contact .formContainer {
-    margin-top: 10%;
     width: 100%;
   }
   .contact .formContainer form{
@@ -118,7 +120,6 @@
 
 @media only screen and (max-width: 375px){
   .contact .formContainer {
-    margin-top: 10%;
     width: 100%;
   }
   .contact .social {
@@ -131,8 +132,7 @@
     width: 90%;
   }
   .contact .social {
-    height: 25%;
-    margin-top: 75%;
+  
   }
 }
 
