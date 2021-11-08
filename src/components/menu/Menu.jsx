@@ -7,19 +7,19 @@ function Menu({ menuOpen, setmenuOpen }) {
             {console.log('hi')}
             <ul>
                 <li onClick={() => setmenuOpen(false)}>
-                    <a href="#intro">Intro</a>
+                    <a href="#intro">INTRO</a>
                 </li>
                 <li onClick={() => setmenuOpen(false)}>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#portfolio">SKILLS</a>
                 </li>
                 <li onClick={() => setmenuOpen(false)}>
-                    <a href="#works">Works</a>
+                    <a href="#works">WORKS</a>
                 </li>
                 <li onClick={() => setmenuOpen(false)}>
-                    <a href="#testimonial">Testimonial</a>
+                    <a href="#testimonial">TIMELINE</a>
                 </li>
                 <li onClick={() => setmenuOpen(false)}>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </div>
