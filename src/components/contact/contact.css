@@ -1,14 +1,11 @@
 @import url("../../global.css");
 .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  text-align: center;
+  overflow: hidden;
 }
 .contact h1 {
   font-size: 50px;
   background-color: white;
-  padding-top: 70px;
 }
 .contact .formContainer {
   width: 100%;
@@ -16,9 +13,7 @@
   flex-direction: row;
   justify-content: center;
   background-color: white;
-  flex: 3;
-  margin-top: 0;
-  padding-top: 0;
+  padding-top: 100px;
 }
 .contact .formContainer form {
   width: 25%;
@@ -47,12 +42,14 @@
 .contact .social {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: var(--mainColor);
   width: 100%;
   color: white;
   align-items: center;
   padding: 20px 0 20px 0;
+  height: 20%;
+  margin-top: 17%;
 }
 
 .contact .social h4 {
@@ -67,7 +64,7 @@
 }
 
 .contact .social .icons .icon {
-  font-size: 90px;
+  font-size: 80px;
   color: white;
   padding: 20px;
 }
@@ -76,20 +73,22 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 767px) {
-  .contact {
-    flex-direction: column;
-  }
+@media only screen and (max-width: 768px) {
+
   .contact h1 {
     font-size: 25px;
   }
 
   .contact .formContainer form {
-    width: 80%;
+    width: 60%;
   }
 
   .contact .formContainer form div label{
     font-size: 15px;
+  }
+
+  .contact .social{
+    margin-top: 26%;
   }
 
   .contact .social h4 {
@@ -100,3 +99,23 @@
     font-size:70px;
   }
 }
+
+
+@media only screen and (max-width: 425px){
+  .contact .formContainer {
+    margin-top: 10%;
+  }
+  .contact .social {
+    height: 20%;
+    margin-top: 40%;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .contact .social {
+    height: 20%;
+    margin-top: 45%;
+  }
+}
+

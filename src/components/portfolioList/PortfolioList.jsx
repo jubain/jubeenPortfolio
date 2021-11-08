@@ -1,5 +1,5 @@
 import React from 'react';
-import './portfolioList.css'
+import './portfolioList.css';
 
 function PortfolioList({ title, active, setselected, id }) {
     return (
