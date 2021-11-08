@@ -42,3 +42,8 @@
 .menu ul li:hover {
   font-weight: 500;
 }
+@media only screen and (max-width: 425px){
+  .menu ul{
+    font-size: 25px;
+  }
+}
