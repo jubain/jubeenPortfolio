@@ -8,7 +8,6 @@
 .contact h1 {
   font-size: 50px;
   background-color: white;
-  flex: 1;
   padding-top: 70px;
 }
 .contact .formContainer {
@@ -17,12 +16,21 @@
   flex-direction: row;
   justify-content: center;
   background-color: white;
-  flex: 2;
+  flex: 3;
   margin-top: 0;
   padding-top: 0;
 }
 .contact .formContainer form {
   width: 25%;
+}
+
+.contact .formContainer form div input{
+  font-size: 15px;
+}
+
+.contact .formContainer form div textarea{
+  resize: none;
+  font-size: 15px;
 }
 
 .contact .formContainer form button {
@@ -72,8 +80,23 @@
   .contact {
     flex-direction: column;
   }
+  .contact h1 {
+    font-size: 25px;
+  }
 
   .contact .formContainer form {
     width: 80%;
+  }
+
+  .contact .formContainer form div label{
+    font-size: 15px;
+  }
+
+  .contact .social h4 {
+    font-size: 18px;
+  }
+
+  .contact .social .icons .icon {
+    font-size:70px;
   }
 }

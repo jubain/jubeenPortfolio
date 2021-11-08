@@ -25,6 +25,7 @@
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  overflow: hidden;
 }
 
 .portfolio .container .item {
@@ -53,6 +54,7 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  overflow: hidden;
 }
 
 .portfolio .container .item:hover {
@@ -78,8 +80,8 @@
   }
 
   .portfolio .container .item {
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     border-radius: 20px;
     border: 1px solid lightgray;
     margin: 10px 20px;

@@ -16,12 +16,6 @@ export const featuredPortfolio = [
         title: "CSS",
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
     },
-    {
-        id: 4,
-        title: "Project Management",
-        img:
-            "https://www.techrepublic.com/a/hub/i/r/2018/03/20/cad44d4d-6707-4703-9eeb-30d539d16a6e/resize/1200x/1be69d3ae9b7c4be604bd2d8058ed960/istock-844535646.jpg",
-    },
 
 ];
 

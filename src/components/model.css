@@ -17,10 +17,11 @@
 }
 
 .modelContainer .imageContainer {
-  width: 100%;
-  height: 50%;
+  width: 90%;
+  height: 40%;
   overflow: hidden;
   position: relative;
+  align-self: center;
 }
 
 .modelContainer .imageContainer .closeModel{
@@ -36,7 +37,7 @@ right: 10px;
 
 .modelContainer .descContainer {
   padding: 5px 15px 5px 15px;
-  font-size: small;
+  font-size: medium;
   line-height: 30px;
 }
 
@@ -44,4 +45,6 @@ right: 10px;
   width: 60%;
   align-self: center;
   padding: 10px 0 10px 0;
+  background-color: var(--mainColor);
+  color: white;
 }

@@ -62,4 +62,7 @@ h3 {
     margin-left: 4px;
     margin-top: 4px;
   }
+  .title {
+    font-size: 30px;
+  }
 }

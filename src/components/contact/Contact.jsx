@@ -18,7 +18,7 @@ function Contact(props) {
       <div className="formContainer">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label for="Email">Email</label>
+            <label for="Email">EMAIL</label>
             <input
               type="email"
               className="form-control form-control-lg"
@@ -27,7 +27,7 @@ function Contact(props) {
             />
           </div>
           <div className="form-group">
-            <label for="Message">Message</label>
+            <label for="Message">MESSAGE</label>
             <textarea
               className="form-control form-control-lg"
               id="exampleFormControlTextarea1"
@@ -35,7 +35,7 @@ function Contact(props) {
             ></textarea>
           </div>
           <button type="button" className="btn">
-            Send
+            SEND
           </button>
           {message && <span>Thanks, I'll reply</span>}
         </form>
