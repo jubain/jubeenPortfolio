@@ -104,6 +104,10 @@
 @media only screen and (max-width: 425px){
   .contact .formContainer {
     margin-top: 10%;
+    width: 100%;
+  }
+  .contact .formContainer form{
+    width: 90%;
   }
   .contact .social {
     height: 20%;
@@ -112,10 +116,13 @@
   }
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 320px){
+  .contact .formContainer form{
+    width: 90%;
+  }
   .contact .social {
-    height: 20%;
-    margin-top: 45%;
+    height: 25%;
+    margin-top: 55%;
   }
 }
 
