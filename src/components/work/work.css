@@ -2,6 +2,7 @@
 .workcontainer{
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .workcontainer h1{
@@ -9,38 +10,48 @@
 }
 
 .workcontainer .carouselContainer{
-   height: 90vh;
+  height: 100vh;
 }
 
 .workcontainer .carouselContainer .carousel{
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 80%;
-  justify-content:space-evenly;
+  height: 95%;
+  width: 70%;
+  justify-content:space-between;
   -webkit-box-shadow: 1px 2px 15px -1px #000000;
   box-shadow: 1px 2px 15px -1px #000000;
   border-radius: 10px;
-  padding: 20px
+  text-align: center;
+  padding: 50px 10px 50px 10px;
+}
+
+.workcontainer .carouselContainer .carousel h4{
+    padding-bottom: 20px;
 }
 
 .workcontainer .carousel .left{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .workcontainer .carousel .left div{
     flex: 1;
+    padding: 10px;
+}
+.workcontainer .carousel .left div p{
+    font-size: 14px;
 }
 .workcontainer .carousel .left div button{
     background-color: var(--mainColor);
     color: white;
+    padding: 5px 30px 5px 30px;
 }
 
 .workcontainer .carousel .left img{
-    flex: 2;
+    flex: 1;
 }
 
 @media only screen and (max-width: 425px){

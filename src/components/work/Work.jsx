@@ -10,7 +10,7 @@ const data = [
   {
     id: "1",
     icon: "web",
-    title: "Web Development",
+    title: "WEB DEVELOPMENT",
     desc: "I developed a website for a construction company. I used React JS to make this website and used Netlify to host it.",
     img: "./assets/houseBuilds.png",
     link: "https://www.housebuildsolutions.net/",
@@ -18,7 +18,7 @@ const data = [
   {
     id: "2",
     icon: "weather",
-    title: "Weather App",
+    title: "WEATHER APP",
     desc: "This app lets user see the weather of their location. I used Node JS(Express JS) to make this app. This app get uses openweather's website's API to get weather data.",
     img: "./assets/weatherApp.png",
     link: "https://jubeen-weather-application.herokuapp.com/",
@@ -26,7 +26,7 @@ const data = [
   {
     id: "3",
     icon: "chat",
-    title: "Chat App",
+    title: "CHAT APP",
     desc: "This app is chat room app. I used Node JS(Express JS) and Socket.io to make this.",
     img: "./assets/chatApp.png",
     link: "https://jubeen-chat-app.herokuapp.com/",

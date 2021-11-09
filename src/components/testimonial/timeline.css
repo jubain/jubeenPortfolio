@@ -3,7 +3,9 @@
   background: var(--mainColor);
   font-size: 16px;
   color: rgb(53, 53, 53);
-  height: 100vh;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
 }
 
 .title {
@@ -15,20 +17,39 @@
 h3 {
   padding-top: 0.25em;
 }
-.icon{
+.icon {
   margin-top: 4px;
 }
 
 .vertical-timeline-element-content {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
     0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
-  padding: 2em 3em !important;
-  width: 80%;
+  padding: 2em 2em !important;
 }
 
-#description {
-  margin: 1.5em 0 2em 0;
+.timeline .timelineContainer {
+  height: 100vh;
 }
+
+.timeline .timelineContainer .verticalTimeline {
+  height: 20%;
+}
+
+.timeline .timelineContainer .verticalTimeline h3 {
+  font-size: 20px;
+}
+.timeline .timelineContainer .verticalTimeline h5 {
+  font-size: 16px;
+  padding: 0;
+}
+.timeline .timelineContainer .verticalTimeline p {
+  font-size: 12px;
+  padding: 0;
+}
+
+/* #description {
+  margin: 1.5em 0 2em 0;
+} */
 
 .button {
   text-decoration: none;
@@ -54,25 +75,25 @@ h3 {
 }
 
 @media only screen and (max-width: 425px) {
- .timeline .timelineContainer .verticalTimeline{
-   height: 22vh;
-   overflow: hidden;
- }
- .timeline .timelineContainer .verticalTimeline h3{
-   font-size: 14px;
-   padding: 0;
-   margin: 0;
- }
- .timeline .timelineContainer .verticalTimeline h5{
-   font-size: 12px;
-   padding: 0;
-   margin: 0;
- }
- .timeline .timelineContainer .verticalTimeline p{
-   font-size: 10px;
-   padding: 0;
-   margin: 0;
- }
+  .timeline .timelineContainer .verticalTimeline {
+    height: 22vh;
+    overflow: hidden;
+  }
+  .timeline .timelineContainer .verticalTimeline h3 {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+  .timeline .timelineContainer .verticalTimeline h5 {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+  }
+  .timeline .timelineContainer .verticalTimeline p {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -81,7 +102,7 @@ h3 {
     float: none !important;
     margin-top: 1.5em;
   }
-  .icon{
+  .icon {
     margin-left: 4px;
     margin-top: 4px;
   }
