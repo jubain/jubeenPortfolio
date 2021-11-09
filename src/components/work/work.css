@@ -16,6 +16,7 @@
   height: 100vh;
   padding: 0;
   margin: 0;
+  padding-bottom: 200px;
 }
 
 .workcontainer .carouselContainer .carousel{
@@ -29,6 +30,7 @@
   border-radius: 10px;
   text-align: center;
   padding: 50px 10px 50px 10px;
+  overflow: hidden;
 }
 
 .workcontainer .carouselContainer .carousel h4{
@@ -40,11 +42,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .workcontainer .carousel .left div{
     flex: 1;
     padding: 10px;
+    overflow: hidden;
 }
 .workcontainer .carousel .left div p{
     font-size: 14px;
