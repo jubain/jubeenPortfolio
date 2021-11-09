@@ -3,20 +3,25 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    
 }
 
-.workcontainer h1{
+.workcontainer .title{
     font-size: 50px;
+    padding-top: 100px;
+    color: var(--mainColor);
 }
 
 .workcontainer .carouselContainer{
   height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 .workcontainer .carouselContainer .carousel{
   display: flex;
   flex-direction: column;
-  height: 95%;
+  height: 90%;
   width: 70%;
   justify-content:space-between;
   -webkit-box-shadow: 1px 2px 15px -1px #000000;
@@ -54,15 +59,12 @@
     flex: 1;
 }
 
+
 @media only screen and (max-width: 425px){
 
-    .workcontainer .carouselContainer {
-        align-self: flex-start;
-        flex: 2;
-    }
-    .workcontainer h1{
-        font-size: 20px;
-        flex: 1;
+    .workcontainer .carouselContainer{
+        height: 100vh;
+        padding-bottom: 200px;
     }
     
     .workcontainer .carouselContainer .carousel{

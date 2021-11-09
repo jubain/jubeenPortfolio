@@ -46,9 +46,7 @@ export default function Work() {
 
   return (
     <div className="workcontainer" id="works">
-      <div>
-        <h1>WORKS</h1>
-      </div>
+        <h1 className="title">WORKS</h1>
       {modelOpen === true && isTabletOrMobile===true ? (
         <div className="modelContainer">
           <div className="imageContainer">

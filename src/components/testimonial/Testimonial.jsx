@@ -25,7 +25,7 @@ function Testimonial(props) {
                         return (
                             <VerticalTimelineElement
                                 key={element.id}
-                                date={isTabletOrMobile===true?null:element.date}
+                                date={element.date}
                                 className="verticalTimeline vertical-timeline-element--work"
                                 dateClassName="date"
                                 icon={isWorkIcon ? <WorkIcon fontSize="12" /> : <SchoolIcon />}

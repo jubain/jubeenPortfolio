@@ -43,7 +43,10 @@
   font-weight: 500;
 }
 @media only screen and (max-width: 425px){
-  .menu ul{
-    font-size: 25px;
+  .menu{
+    width: 250px;
+  }
+  .menu ul li{
+    font-size: 20px;
   }
 }
