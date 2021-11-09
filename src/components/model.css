@@ -51,10 +51,10 @@ right: 10px;
 
 @media only screen and (max-width: 375px) {
   .modelContainer {
-    left: 0;
+    left: 10px;
     width: 90%;
-    left: 15px;
-    top: 100px;
+    top: 200px;
+    right: 10px;
     padding: 10px 5px 10px 5px;
   }
 }
