@@ -12,6 +12,7 @@ function Contact(props) {
     setmessage(true);
   };
 
+
   return (
     <div id="contact" className="contact">
       <h1>CONTACT</h1>

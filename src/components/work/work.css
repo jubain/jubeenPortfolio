@@ -1,30 +1,124 @@
 @import url("../../global.css");
-.workcontainer{
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    
+.workcontainer {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.workcontainer .title{
-    font-size: 50px;
-    padding-top: 100px;
-    color: var(--mainColor);
+.workcontainer h1 {
+  font-size: 50px;
+  padding-top: 80px;
+  color: var(--mainColor);
 }
 
-.workcontainer .carouselContainer{
+.workcontainer .skillsContainer {
+  height: 75%;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  margin-left: 100px;
+}
+
+.workcontainer .carousel{
+    display: none;
+}
+
+.workcontainer .skillsContainer  .itemContainer {
+  flex: 30%;
+  margin: 0px 15px 0px 15px;
+  padding: 25px 30px;
+  -webkit-box-shadow: 1px 2px 15px -1px #000000;
+  box-shadow: 1px 2px 15px -1px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.workcontainer .skillsContainer .itemContainer p{
+    font-size: 12px;
+}
+
+.workcontainer .skillsContainer .itemContainer .titleContainer {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 50%;
+   padding-bottom: 15px;
+}
+
+.workcontainer .skillsContainer .itemContainer .titleContainer img{
+    width: 35px;
+    height: 40px;
+}
+
+.workcontainer .skillsContainer .itemContainer .titleContainer h4{
+    font-size: 15px;
+}
+
+.workcontainer .skillsContainer .itemContainer .bar{
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .workcontainer .skillsContainer{
+        overflow: hidden;
+        margin-left: 60px;
+        padding-top: 10px;
+        height: 80%;
+    }
+    .workcontainer .skillsContainer .itemContainer {
+        padding: 15px 10px;
+        margin: 10px 15px 10px 15px;
+    }
+    .workcontainer .skillsContainer .itemContainer .titleContainer h4{
+        font-size: 12px;
+        align-self: center;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .workcontainer h1 {
+        font-size: 30px;
+    }
+    .workcontainer .skillsContainer{
+        margin-left: 35px;
+        height: 100%;
+    }
+    .workcontainer .carousel{
+        display: block;
+        padding: 0 10px;
+    }
+    .workcontainer .carousel .carouselItem{
+        height: 100%;
+    }
+    .workcontainer .carousel .carouselItem img{
+        height: 550px;
+        padding-bottom: 200px;
+    }
+    .workcontainer .carousel .carouselItem .caption {
+        color: var(--mainColor);
+    }
+  }
+
+/* .workcontainer .carouselContainer {
   height: 100vh;
   padding: 0;
   margin: 0;
   padding-bottom: 200px;
 }
 
-.workcontainer .carouselContainer .carousel{
+.workcontainer .carouselContainer .carousel {
   display: flex;
   flex-direction: column;
   height: 90%;
   width: 70%;
-  justify-content:space-between;
+  justify-content: space-between;
   -webkit-box-shadow: 1px 2px 15px -1px #000000;
   box-shadow: 1px 2px 15px -1px #000000;
   border-radius: 10px;
@@ -33,65 +127,62 @@
   overflow: hidden;
 }
 
-.workcontainer .carouselContainer .carousel h4{
-    padding-bottom: 20px;
+.workcontainer .carouselContainer .carousel h4 {
+  padding-bottom: 20px;
 }
 
-.workcontainer .carousel .left{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
+.workcontainer .carousel .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
 }
 
-.workcontainer .carousel .left div{
-    flex: 1;
-    padding: 10px;
-    overflow: hidden;
+.workcontainer .carousel .left div {
+  flex: 1;
+  padding: 10px;
+  overflow: hidden;
 }
-.workcontainer .carousel .left div p{
-    font-size: 14px;
+.workcontainer .carousel .left div p {
+  font-size: 14px;
 }
-.workcontainer .carousel .left div button{
-    background-color: var(--mainColor);
-    color: white;
-    padding: 5px 30px 5px 30px;
-}
-
-.workcontainer .carousel .left img{
-    flex: 1;
+.workcontainer .carousel .left div button {
+  background-color: var(--mainColor);
+  color: white;
+  padding: 5px 30px 5px 30px;
 }
 
+.workcontainer .carousel .left img {
+  flex: 1;
+}
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 425px) {
+  .workcontainer .carouselContainer {
+    height: 100vh;
+    padding-bottom: 200px;
+  }
 
-    .workcontainer .carouselContainer{
-        height: 100vh;
-        padding-bottom: 200px;
-    }
-    
-    .workcontainer .carouselContainer .carousel{
-        height: 90%;
-    }
-    .workcontainer .carouselContainer .carousel h4{
-        display: none;
-    }
-    .workcontainer .carousel .left div{
-        display: none;
-    }
-    .workcontainer .carousel .left img{
-        height: 100%;
-        width: 100%;
-    }
+  .workcontainer .carouselContainer .carousel {
+    height: 90%;
+  }
+  .workcontainer .carouselContainer .carousel h4 {
+    display: none;
+  }
+  .workcontainer .carousel .left div {
+    display: none;
+  }
+  .workcontainer .carousel .left img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-
-    .workcontainer .carousel{
-        height: 100%;
-    }
-    .workcontainer .carousel .left div p{
-        font-size: 12px;
-    }
-}
+  .workcontainer .carousel {
+    height: 100%;
+  }
+  .workcontainer .carousel .left div p {
+    font-size: 12px;
+  }
+} */

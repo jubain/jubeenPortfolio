@@ -65,7 +65,7 @@ function Porfolio(props) {
 
     return (
         <div className='portfolio' id='portfolio'>
-            <h1>SKILLS</h1>
+            <h1>PROJECTS</h1>
             <ul>
                 {list.map(item => {
                     return (
