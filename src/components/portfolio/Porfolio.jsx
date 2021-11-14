@@ -74,7 +74,7 @@ function Porfolio(props) {
         <Modal.Body>
           <img className="modelImage" src={item!=undefined? item.img:null} />
           <p className="modelDesc">
-            {item.desc}
+            {item!=undefined? item.desc:null}
           </p>
         </Modal.Body>
       </Modal>
