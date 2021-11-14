@@ -1,112 +1,43 @@
-export const featuredPortfolio = [
-    {
-        id: 1,
-        title: "Python",
-        img:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/768px-Python_logo_01.svg.png",
-    },
-    {
-        id: 2,
-        title: "React JS",
-        img:
-            "https://reactjs.org/logo-og.png",
-    },
-    {
-        id: 3,
-        title: "CSS",
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
-    },
-
-];
-
 export const webPortfolio = [
-    {
-        id: 1,
-        title: "HTML",
-        img: "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png",
-    },
-    {
-        id: 2,
-        title: "CSS",
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
-    },
-
+  {
+    id: 1,
+    title: "Chat Application",
+    img: "./assets/chatApp.png",
+    desc: `I created this chat web application using HTML and CSS in the frontend and Node Js in the backend.
+        I have used Socket.io library to create the messaging feature.
+    `,
+  },
+  {
+    id: 2,
+    title: "Weather Application",
+    img: "./assets/weatherApp.png",
+    desc: `I create this application using HTML and CSS in the frontend and Node Js in the backend.
+        I have used API from weatherstack which is a website that gives open weather Rest API to get the weather detail. This apps 
+        lets user enter a location and give weather of that location.
+    `,
+  },
+  {
+    id: 3,
+    title: "Client Website",
+    img: "./assets/houseBuilds.png",
+    desc: "I used React to create this website, which is for a contruction company named House Build Solutions. This website gives information about the company.",
+  },
 ];
 
 export const mobilePortfolio = [
-    {
-        id: 1,
-        title: "React JS",
-        img:
-            "https://reactjs.org/logo-og.png",
-    },
-    {
-        id: 2,
-        title: "Express",
-        img:
-            "https://initialcommit.com/img/initialcommit/beginners-guide-to-using-express-js-and-node-js-framework.png",
-    },
-    {
-        id: 3,
-        title: "React native",
-        img:
-            "https://pajaaleksic.com/wp-content/uploads/2019/07/react-native-workshop.jpg",
-    },
+  {
+    id: 1,
+    title: "E-Doctor",
+    img: "./assets/eDoctor.png",
+    desc: "This is my on going undergradute project, which is a cross platform mobile applicaiont. I have used React Native (Expo) for the frontend and firebase in the backend. This app lets user book doctor appointments and have chat with the doctor.",
+  },
 ];
 
 export const designPortfolio = [
-    {
-        id: 1,
-        title: "Java",
-        img:
-            "https://codersera.com/blog/wp-content/uploads/2019/06/java_logo_640.jpg",
-    },
-    {
-        id: 2,
-        title: "Python",
-        img:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/768px-Python_logo_01.svg.png",
-    },
-    {
-        id: 3,
-        title: "JavaScript",
-        img:
-            "https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png",
-    },
+  {
+    id: 1,
+    title: "Poster",
+    img: "./assets/poster.png",
+    desc: "I create this poster for a charity event done by my society in the university. I created this poster from website called canva.",
+  },
 ];
-
-export const othersPortfolio = [
-    {
-        id: 2,
-        title: "Communication",
-        img:
-            "https://entrepreneurhandbook.co.uk/wp-content/uploads/2020/05/Communication-skills.png.webp",
-    },
-    {
-        id: 4,
-        title: "Team work",
-        img:
-            "https://www.potential.com/wp-content/uploads/2020/11/Image-1.png",
-    },
-    {
-        id: 5,
-        title: "Time management",
-        img:
-            "https://dart.ed.ac.uk/wp-content/uploads/2020/08/Time-Management.png",
-    },
-];
-
-export const databasePortfolio = [
-    {
-        id: 1,
-        title: "MySQL",
-        img:
-            "https://cdn.liveagent.com/app/uploads/2020/11/MySQL-Logo.png",
-    },
-    {
-        id: 2,
-        title: "MongoDB",
-        img:
-            "https://www.bloorresearch.com/wp-content/uploads/2013/03/MONGO-DB-logo-300x470--x.png",
-    },
-]

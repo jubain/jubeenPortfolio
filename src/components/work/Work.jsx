@@ -39,7 +39,7 @@ const data = [
     id: 1,
     title: "JavaScript",
     img: "https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "I have done online bootcamp course on JavaScript course from udemy and have used it to make websites and a dice game.",
     progress: 70,
     label:'7/10'
   },
@@ -47,7 +47,7 @@ const data = [
     id: 2,
     title: "HTML and CSS",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "I have learned HTML and CSS in the unversity and expanded my knowledge through bootcamp course of web development from udemy.",
     progress: 70,
     label:'7/10'
   },
@@ -55,7 +55,7 @@ const data = [
     id: 3,
     title: "React JS",
     img: "https://reactjs.org/logo-og.png",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "I have good knowledge of React and have used to make this webpage.",
     progress: 60,
     label:'6/10'
   },
@@ -63,7 +63,7 @@ const data = [
     id: 4,
     title: "Node JS",
     img: "https://cdn.liveagent.com/app/uploads/2020/11/MySQL-Logo.png",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "I self taught Node JS and used it to make few web applications.",
     progress: 55,
     label:'5.5/10'
   },
@@ -71,7 +71,7 @@ const data = [
     id: 5,
     title: "React Native",
     img: "https://pajaaleksic.com/wp-content/uploads/2019/07/react-native-workshop.jpg",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "I have it used to make cross platform mobile application for the final year project.",
     progress: 55,
     label:'5.5/10'
   },
@@ -79,7 +79,7 @@ const data = [
     id: 6,
     title: "MySQL",
     img: "https://cdn.liveagent.com/app/uploads/2020/11/MySQL-Logo.png",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    desc: "I have good knowledege of MySQL which I got from my university's course and have used in few university assignment projects.",
     progress: 60,
     label:'6/10'
   },
