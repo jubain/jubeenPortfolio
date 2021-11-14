@@ -55,7 +55,7 @@ h3 {
   display: block !important;
   float: none !important;
   margin-top: 1.5em;
-  color:white;
+  color:var(--mainColor);
 }
 
 /* #description {
