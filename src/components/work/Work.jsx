@@ -46,7 +46,7 @@ const data = [
   {
     id: 2,
     title: "HTML and CSS",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/1280px-CSS3_and_HTML5_logos_and_wordmarks.svg.png",
     desc: "I have learned HTML and CSS in the unversity and expanded my knowledge through bootcamp course of web development from udemy.",
     progress: 70,
     label:'7/10'
@@ -54,7 +54,7 @@ const data = [
   {
     id: 3,
     title: "React JS",
-    img: "https://reactjs.org/logo-og.png",
+    img: "https://www.pngitem.com/pimgs/m/664-6644509_icon-react-js-logo-hd-png-download.png",
     desc: "I have good knowledge of React and have used to make this webpage.",
     progress: 60,
     label:'6/10'
@@ -102,6 +102,7 @@ export default function Work() {
           className="carousel"
           activeIndex={index}
           onSelect={handleSelect}
+          variant="dark"
         >
           {data.map((item) => {
             return (
