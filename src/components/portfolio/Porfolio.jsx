@@ -67,17 +67,26 @@ function Porfolio(props) {
         onHide={() => setModalShow(false)}
       >
         <Modal.Header closeButton>
-          <Modal.Title className="modelTitle" id="contained-modal-title-vcenter">
-            {item!=undefined? item.title:null}
+          <Modal.Title
+            className="modelTitle"
+            id="contained-modal-title-vcenter"
+          >
+            {item != undefined ? item.title : null}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img className="modelImage" src={item!=undefined? item.img:null} />
-          <p className="modelDesc">
-            {item!=undefined? item.desc:null}
-          </p>
+          <div className="modelImageContainer">
+            <img
+              className="modelImage"
+              src={item != undefined ? item.img : null}
+            />
+          </div>
+
+          <p className="modelDesc">{item != undefined ? item.desc : null}</p>
+          <a href={item != undefined ? item.link : null} target='_blank'>Link</a>
         </Modal.Body>
       </Modal>
+
       <div className="container">
         {data.map((item) => {
           return (
