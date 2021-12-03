@@ -12,7 +12,6 @@
   font-size: 50px;
   text-align: center;
   color: white;
-  padding-top: 100px;
 }
 
 h3 {
@@ -41,21 +40,26 @@ h3 {
 }
 
 .timeline .timelineContainer .verticalTimeline h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 .timeline .timelineContainer .verticalTimeline h5 {
-  font-size: 16px;
+  font-size: 14px;
   padding: 0;
 }
 .timeline .timelineContainer .verticalTimeline p {
-  font-size: 12px;
+  font-size: 10px;
   padding: 0;
+}
+.vertical-timeline-element-content {
+  height: 100px;
 }
 .vertical-timeline-element-date {
   display: block !important;
   float: none !important;
-  margin-top: 1.5em;
-  color:var(--mainColor);
+}
+.date {
+  color: white;
+  
 }
 
 /* #description {
@@ -85,10 +89,49 @@ h3 {
   background-color: #f3bc3c;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 1024px) {
+  .vertical-timeline-element-content {
+    height: 100%;
+    overflow: hidden;
+  }
+  span.vertical-timeline-element-date {
+    color: var(--mainColor);
+    font-size: 20px;
+  }
+  .vertical-timeline-element-icon{
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .timeline .timelineContainer .verticalTimeline {
-    height: 10%;
-    overflow: hidden; 
+    height: 22%;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    margin-top: 1.5em;
+  }
+  .icon {
+    margin-left: 4px;
+    margin-top: 4px;
+  }
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .vertical-timeline-element-content {
+    height: 100%;
+    overflow: hidden;
+  }
+  .timeline .timelineContainer .verticalTimeline {
+    overflow: hidden;
   }
   .timeline .timelineContainer .verticalTimeline h3 {
     font-size: 12px;
@@ -105,25 +148,8 @@ h3 {
     padding: 0;
     margin: 0;
   }
-}
-
-@media only screen and (max-width: 768px) {
-  .timeline .timelineContainer .verticalTimeline {
-    height: 22%;
-    overflow: hidden;
-    border-radius: 10px;
-    width: 95%;
-  }
   .vertical-timeline-element-date {
-    display: block !important;
-    float: none !important;
-    margin-top: 1.5em;
-  }
-  .icon {
-    margin-left: 4px;
-    margin-top: 4px;
-  }
-  .title {
-    font-size: 30px;
+    margin-top: 0;
+    font-size: 12px;
   }
 }

@@ -9,7 +9,6 @@
 
 .portfolio h1 {
   font-size: 50px;
-  padding-top: 100px;
 }
 
 .portfolio ul {
@@ -75,14 +74,17 @@ font-size: 20px;
   justify-content: center;
 }
 .modelImage{
- max-width: 50%;
+ max-width: 150px;
+ height: 150px;
  height: auto;
 }
 
 .modelDesc{
-  padding-top: 10px;
-  font-size: 18px;
+  font-size: 14px;
+  padding: 10px 10px;
+  text-align: left;
  }
+
 
 @media only screen and (max-width: 768px) {
   .portfolio h1 {

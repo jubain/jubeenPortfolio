@@ -56,7 +56,7 @@ const data = [
     title: "React JS",
     img: "https://www.pngitem.com/pimgs/m/664-6644509_icon-react-js-logo-hd-png-download.png",
     desc: "I have good knowledge of React and have used to make this webpage.",
-    progress: 60,
+    progress: 80,
     label:'6/10'
   },
   {
@@ -64,7 +64,7 @@ const data = [
     title: "Node JS",
     img: "https://cdn.liveagent.com/app/uploads/2020/11/MySQL-Logo.png",
     desc: "I self taught Node JS and used it to make few web applications.",
-    progress: 55,
+    progress: 75,
     label:'5.5/10'
   },
   {
@@ -72,7 +72,7 @@ const data = [
     title: "React Native",
     img: "https://pajaaleksic.com/wp-content/uploads/2019/07/react-native-workshop.jpg",
     desc: "I have it used to make cross platform mobile application for the final year project.",
-    progress: 55,
+    progress: 75,
     label:'5.5/10'
   },
   {
@@ -80,7 +80,7 @@ const data = [
     title: "MySQL",
     img: "https://cdn.liveagent.com/app/uploads/2020/11/MySQL-Logo.png",
     desc: "I have good knowledege of MySQL which I got from my university's course and have used in few university assignment projects.",
-    progress: 60,
+    progress: 80,
     label:'6/10'
   },
 ];

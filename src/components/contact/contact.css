@@ -9,7 +9,6 @@
 .contact h1 {
   font-size: 50px;
   background-color: white;
-  padding-top: 100px;
 }
 .contact .formContainer {
   width: 100%;
@@ -51,12 +50,11 @@
 .contact .social {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: var(--mainColor);
   width: 100%;
   color: white;
   align-items: center;
-  padding: 20px 0 20px 0;
   height: 20%;
 }
 
@@ -82,11 +80,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-  .contact h1 {
-    font-size: 30px;
-  }
-
   .contact .formContainer form {
     width: 60%;
   }
