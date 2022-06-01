@@ -1,16 +1,39 @@
 let timeLine = [
     {
         id: 1,
-        title: "Student",
+        title: "Frontend Developer",
+        location: "Humanitarian Operation, London",
+        description:
+            `
+            Collaborate with back-end developers and graphic designers to improve the usability,
+            Maintain and improve website,
+            Optimizing site speed and performance,
+            Monitor website performance,
+            Identify and communicate best practices`,
+        buttonText: "View Frontend Projects",
+        date: "Feburary 2022 - Present",
+        icon: "Work",
+    },
+    {
+        id: 2,
+        title: "MSc Software Engineering and Applications",
+        location: "University of Bedfordshire, Luton",
+        description:"",
+        date: "June 2022 - June 2023",
+        icon: "School",
+    },
+    {
+        id: 3,
+        title: "BSc Information Technology",
         location: "University of Bedfordshire, Luton",
         description:
-            "Bsc Information Technology (Hons)",
+            "First class Honour",
         buttonText: "View Frontend Projects",
         date: "Feburary 2019 - Feburary 2022",
         icon: "School",
     },
     {
-        id: 1,
+        id: 4,
         title: "Front of house",
         location: "New York Deli, Aylesbury",
         description:
@@ -20,7 +43,7 @@ let timeLine = [
         icon: "Work",
     },
     {
-        id: 2,
+        id: 5,
         title: "Retail Assistant",
         location: "Iceland Foods, Luton",
         description:

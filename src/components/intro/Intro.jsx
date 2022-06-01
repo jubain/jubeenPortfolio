@@ -2,10 +2,14 @@ import React, { useEffect, useRef } from 'react';
 import './intro.css'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import { init } from 'ityped';
+import { Button } from 'react-bootstrap';
+import { useMediaQuery } from 'react-responsive';
 
-function Intro(props) {
+function Intro() {
 
     const textRef = useRef()
+
+    const isMobile = useMediaQuery({ query: '(max-width: 425px)' })
 
     useEffect(() => {
         init(textRef.current, {
@@ -20,7 +24,7 @@ function Intro(props) {
         <div className='intro' id='intro'>
             <div className="left">
                 <div className="imageContainer">
-                    <img src="https://github.com/jubain/PortfolioImages/blob/main/me.png?raw=true" />
+                    <img src="./assets/me.png" />
                 </div>
             </div>
             <div className="right">
@@ -32,6 +36,7 @@ function Intro(props) {
                 <a href='#portfolio'>
                     <KeyboardArrowDownIcon className='image' />
                 </a>
+                <Button className='cv-download-button' size={isMobile ? 'sm' : 'lg'}>Download CV</Button>
             </div>
         </div>
     );

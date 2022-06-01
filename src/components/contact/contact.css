@@ -99,6 +99,9 @@
 
 
 @media only screen and (max-width: 425px){
+  .contact h1{
+    font-size: 30px;
+  }
   .contact .formContainer {
     width: 100%;
   }
@@ -112,17 +115,11 @@
   .contact .formContainer {
     width: 100%;
   }
-  .contact .social {
-    
-  }
 }
 
 @media only screen and (max-width: 320px){
   .contact .formContainer form{
     width: 90%;
-  }
-  .contact .social {
-  
   }
 }
 

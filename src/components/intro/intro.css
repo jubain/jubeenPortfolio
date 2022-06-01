@@ -3,6 +3,7 @@
 .intro {
   background-color: white;
   display: flex;
+  margin-top: 0;
 }
 
 .intro .left {
@@ -66,12 +67,24 @@
   font-size: 50px;
   animation: arrowBlink 1s infinite;
 }
-
+.cv-download-button {
+  position: absolute;
+  bottom: 100px;
+  left: 70%;
+}
 @keyframes arrowBlink {
   100% {
     opacity: 0;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .cv-download-button {
+    position: absolute;
+    bottom: 100px;
+    left: 60%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .intro {
     background-color: white;
@@ -81,8 +94,8 @@
     justify-content: center;
   }
 
-  .intro .left{
-   flex: 1;
+  .intro .left {
+    flex: 1;
   }
   .intro .left .imageContainer {
     /* display: flex;
@@ -94,16 +107,16 @@
     border-radius: 10px;
     height: 100%;
   }
-  .intro .left .imageContainer img{
+  .intro .left .imageContainer img {
     width: 800px;
-    height: '100%';
+    height: "100%";
   }
   .intro .left .right {
     flex: 1;
   }
 
   .intro .right .wrapper {
-    width: 100%;
+    width: 100vh;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -124,9 +137,27 @@
   .intro .right .wrapper h3 {
     font-size: 20px;
   }
+  .cv-download-button {
+    position: absolute;
+    bottom: 25px;
+    left: 75%;
+  }
 }
 @media only screen and (max-width: 425px) {
-  
+  .cv-download-button {
+    position: absolute;
+    bottom: 10px;
+    left: 65%;
+  }
 }
 
-
+@media only screen and (max-width: 375px) {
+  .cv-download-button {
+    left: 60%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cv-download-button {
+    left: 55%;
+  }
+}

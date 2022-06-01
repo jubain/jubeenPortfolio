@@ -3,6 +3,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  margin-top: 40%;
 }
 
 .workcontainer h1 {
@@ -100,12 +101,14 @@
     padding: 0 10px;
   }
   .workcontainer .carousel .carouselItem {
-    height: 100%;
+    height: 70vh;
   }
-  .workcontainer .carousel .carouselItem img {
-    height: 550px;
-    padding-bottom: 200px;
+  .workcontainer .carousel .carouselItem .img {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
   }
+
   .workcontainer .carousel .carouselItem .caption {
     color: var(--mainColor);
   }

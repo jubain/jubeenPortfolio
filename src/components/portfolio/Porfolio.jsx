@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
-import { webPortfolio, mobilePortfolio, designPortfolio } from "../../data";
+import { mobilePortfolio, designPortfolio, frontendPortfolio, backendPortfolio } from "../../data";
 import "./portfolio.css";
 import { Modal } from "react-bootstrap";
 
 function Porfolio(props) {
   const list = [
     {
-      id: "web",
-      title: "Web Application",
+      id: "frontend",
+      title: "Frontend",
+    },
+    {
+      id: "backend",
+      title: "Backend",
     },
     {
       id: "mobile",
@@ -29,8 +33,11 @@ function Porfolio(props) {
 
   useEffect(() => {
     switch (selected) {
-      case "web":
-        setdata(webPortfolio);
+      case "frontend":
+        setdata(frontendPortfolio);
+        break;
+      case "backend":
+        setdata(backendPortfolio);
         break;
       case "mobile":
         setdata(mobilePortfolio);
@@ -39,7 +46,7 @@ function Porfolio(props) {
         setdata(designPortfolio);
         break;
       default:
-        setdata(webPortfolio);
+        setdata(frontendPortfolio);
         break;
     }
   }, [selected]);
