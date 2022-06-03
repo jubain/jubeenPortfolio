@@ -31,6 +31,6 @@
 
 @media only screen and (max-width: 768px) {
   .app > .sections {
-    margin-top: 10%;
+    padding-top: 3rem;
   }
 }

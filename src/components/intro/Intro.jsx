@@ -36,10 +36,10 @@ function Intro() {
                         I am looking to get into the world of software development utilizing my skills and knowledge.
                     </p>
                 </div>
-                <a href='#portfolio'>
-                    <KeyboardArrowDownIcon className='image' />
-                </a>
             </div>
+            <a href='#portfolio'>
+                <KeyboardArrowDownIcon className='image' />
+            </a>
         </div>
     );
 }

@@ -4,6 +4,9 @@
   background-color: white;
   display: flex;
   margin-top: 0;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
 }
 
 .intro .left {
@@ -31,7 +34,6 @@
 
 .intro .right {
   flex: 0.5;
-  position: relative;
 }
 
 .intro .right .wrapper {
@@ -62,13 +64,13 @@
   padding: 5% 90px 0 0;
 }
 
-.intro .right a {
+.intro a {
   position: absolute;
-  bottom: 90px;
-  left: 40%;
+  bottom: 5rem;
+  left: 50%;
 }
 
-.intro .right a .image {
+.intro .image {
   font-size: 50px;
   animation: arrowBlink 1s infinite;
 }
@@ -123,8 +125,8 @@
     font-size: small;
   }
 
-  .intro .right a {
-    top: 65%;
+  .intro a {
+    top: 82%;
   }
 
   .intro .right .wrapper h1 {
@@ -146,14 +148,17 @@
     font-size: small;
     padding: 0 10rem;
   }
-  .intro .right a {
+  .intro a {
     bottom: 95px;
-    left: 45%;
+    left: 50%;
   }
 }
 @media only screen and (max-width: 425px) {
   .intro .left .imageContainer img {
     border-radius: 0;
+  }
+  .intro a {
+    display: none;
   }
 }
 @media only screen and (max-width: 375px) {
