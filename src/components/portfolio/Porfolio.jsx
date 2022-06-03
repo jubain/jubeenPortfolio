@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { mobilePortfolio, designPortfolio, frontendPortfolio, backendPortfolio } from "../../data";
 import "./portfolio.css";
+import '../../global.css'
 import { Modal } from "react-bootstrap";
 
 function Porfolio(props) {
@@ -53,7 +54,7 @@ function Porfolio(props) {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>PROJECTS</h1>
+      <h1 className="heading">PROJECTS</h1>
       <ul>
         {list.map((item) => {
           return (

@@ -8,12 +8,20 @@ import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Button } from "react-bootstrap";
+import { useMediaQuery } from "react-responsive";
+import { FaLink } from 'react-icons/fa'
 
 function App() {
   const [menuOpen, setmenuOpen] = useState(false);
 
+  const [onMouseEnter, setOnMouseEnter] = useState(false);
+
   const [githubData, setGithubData] = useState([])
   const [githubUser, setGithubUser] = useState("jubain")
+
+  const isMobile = useMediaQuery({ query: '(max-width: 425px)' })
+  const isTablet = useMediaQuery({ query: '(max-width: 768px)' })
 
   const fetchData = () => {
     return fetch(`https://api.github.com/repos/${githubUser}/CV/contents`)
@@ -21,44 +29,61 @@ function App() {
         console.log(response.json())
         //return response.blob()
       })
-      // .then((blob) => {
-      //   const url = window.URL.createObjectURL(
-      //     new Blob([blob]),
-      //   );
-      //   const link = document.createElement('a');
-      //   link.href = url;
-      //   link.setAttribute(
-      //     'download',
-      //     `Jubeen Amatya CV.pdf`,
-      //   );
+    // .then((blob) => {
+    //   const url = window.URL.createObjectURL(
+    //     new Blob([blob]),
+    //   );
+    //   const link = document.createElement('a');
+    //   link.href = url;
+    //   link.setAttribute(
+    //     'download',
+    //     `Jubeen Amatya CV.pdf`,
+    //   );
 
-      //   // Append to html link element page
-      //   document.body.appendChild(link);
+    //   // Append to html link element page
+    //   document.body.appendChild(link);
 
-      //   // Start download
-      //   link.click();
+    //   // Start download
+    //   link.click();
 
-      //   // Clean up and remove the link
-      //   link.parentNode.removeChild(link);
+    //   // Clean up and remove the link
+    //   link.parentNode.removeChild(link);
 
-      // });
+    // });
   }
   useEffect(() => {
     fetchData()
   }, [])
 
   return (
-    <div className="app">
-      <Topbar setmenuOpen={setmenuOpen} menuOpen={menuOpen} />
-      <Menu setmenuOpen={setmenuOpen} menuOpen={menuOpen} />
-      <div className="sections">
-        <Intro fetchData={fetchData} />
-        <Portfolio fetchData={fetchData} />
-        <Work fetchData={fetchData} />
-        <Testimonial fetchData={fetchData} />
-        <Contact fetchData={fetchData} />
+    <>
+      <div className="app">
+        <Topbar setmenuOpen={setmenuOpen} menuOpen={menuOpen} />
+        <Menu setmenuOpen={setmenuOpen} menuOpen={menuOpen} />
+        <div className="sections">
+          <Intro fetchData={fetchData} />
+          <Portfolio fetchData={fetchData} />
+          <Work fetchData={fetchData} />
+          <Testimonial fetchData={fetchData} />
+          <Contact fetchData={fetchData} />
+        </div>
+
       </div>
-    </div>
+      <a href="https://github.com/jubain/CV/blob/main/Jubeen%20Amatya%20CV.pdf"
+      target="blank"
+       style={{
+        position: "absolute",
+        bottom: "1%",
+        right: '1%'
+      }}>
+        <Button
+          variant="primary"
+          size={isMobile || isTablet ? "sm" : "lg"}
+        >
+          <FaLink /> Link to my CV</Button>
+      </a>
+
+    </>
   );
 }
 

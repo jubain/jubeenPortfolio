@@ -9,6 +9,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { useMediaQuery } from "react-responsive";
+import '../../global.css'
 import Timeline from "@material-ui/lab/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
@@ -24,7 +25,7 @@ function Testimonial(props) {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 425px)" });
   return (
     <div className="timeline" id="testimonial">
-      <h1 className="title">TIMELINE</h1>
+      <h1 className="heading title">TIMELINE</h1>
       <VerticalTimeline className="timelineContainer">
       {timeLine.map((element) => {
         let isWorkIcon = element.icon === "Work";

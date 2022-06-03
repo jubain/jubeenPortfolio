@@ -9,12 +9,14 @@
 .intro .left {
   flex: 0.5;
   overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .intro .left .imageContainer {
-  width: 700px;
-  height: 700px;
-  border-radius: 50%;
+  width: 600px;
+  height: 100%;
+  border-radius: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +26,7 @@
 
 .intro .left .imageContainer img {
   width: 90%;
+  border-radius: 40%;
 }
 
 .intro .right {
@@ -39,22 +42,24 @@
   justify-content: center;
 }
 
-.intro .right .wrapper h1 {
-  font-size: 60px;
-  margin: 10px 0;
-}
-
 .intro .right .wrapper h2 {
   font-size: 35px;
 }
 
 .intro .right .wrapper h3 {
-  font-size: 30px;
+  font-size: 25px;
+  color: gray;
 }
 
 .intro .right .wrapper h3 span {
   font-size: inherit;
   color: cornflowerblue;
+}
+
+.intro .right .wrapper p {
+  text-align: left;
+  color: gray;
+  padding: 5% 90px 0 0;
 }
 
 .intro .right a {
@@ -77,13 +82,6 @@
     opacity: 0;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .cv-download-button {
-    position: absolute;
-    bottom: 100px;
-    left: 60%;
-  }
-}
 
 @media only screen and (max-width: 768px) {
   .intro {
@@ -98,21 +96,16 @@
     flex: 1;
   }
   .intro .left .imageContainer {
-    /* display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    float: right;
-    border-radius: 0;
-    height: '100%'; */
     border-radius: 10px;
     height: 100%;
   }
   .intro .left .imageContainer img {
-    width: 800px;
-    height: "100%";
+    height: 100%;
+    width: 60%;
   }
-  .intro .left .right {
+  .intro .right {
     flex: 1;
+    padding-bottom: 10%;
   }
 
   .intro .right .wrapper {
@@ -123,6 +116,11 @@
     justify-content: center;
     padding-left: 0;
     align-items: center;
+  }
+  .intro .right .wrapper p {
+    text-align: center;
+    padding: 0;
+    font-size: small;
   }
 
   .intro .right a {
@@ -137,27 +135,44 @@
   .intro .right .wrapper h3 {
     font-size: 20px;
   }
-  .cv-download-button {
-    position: absolute;
-    bottom: 25px;
-    left: 75%;
-  }
 }
-@media only screen and (max-width: 425px) {
-  .cv-download-button {
-    position: absolute;
-    bottom: 10px;
-    left: 65%;
+@media only screen and (max-width: 768px) {
+  .intro .right .wrapper {
+    justify-content: flex-start;
+    padding-top: 1rem;
   }
+  .intro .right .wrapper p {
+    width: 100%;
+    font-size: small;
+    padding: 0 10rem;
+  }
+  .intro .right a {
+    bottom: 95px;
+    left: 45%;
+  }  
 }
-
 @media only screen and (max-width: 375px) {
-  .cv-download-button {
-    left: 60%;
+  .intro .left .imageContainer img {
+    border-radius: 0;
   }
+  .intro .right .wrapper {
+    justify-content: center;
+  }
+  .intro .right .wrapper p {
+    width: 100%;
+    font-size: small;
+    padding: 0 12rem;
+  }
+  .intro .right a {
+    display: none;
+  }  
 }
 @media only screen and (max-width: 320px) {
-  .cv-download-button {
-    left: 55%;
+  .intro .right .wrapper {
+    justify-content: flex-start;
+    padding-top: 1rem;
+  }
+  .intro .right .wrapper p {
+    padding: 0 13rem;
   }
 }

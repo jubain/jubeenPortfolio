@@ -4,7 +4,7 @@ import "@brainhubeu/react-carousel/lib/style.css";
 import "./work.css";
 import "../model.css";
 import { useMediaQuery } from "react-responsive";
-import CloseIcon from "@mui/icons-material/Close";
+import '../../global.css'
 import { ProgressBar, Carousel } from "react-bootstrap";
 
 const data = [
@@ -68,7 +68,7 @@ export default function Work() {
 
   return (
     <div className="workcontainer" id="works">
-      <h1 className="title">SKILLS</h1>
+      <h1 className="heading">SKILLS</h1>
       {isMobile === true ? (
         <Carousel
           fade

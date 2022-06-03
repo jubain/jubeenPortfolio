@@ -2,3 +2,32 @@
   --mainColor: #15023a;
   --width: 768px;
 }
+
+.heading {
+  font-size: 50px;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 30px;
+    margin-top: 0;
+    color: var(--mainColor);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .heading {
+    margin-top: 6%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .heading {
+    margin-top: 7%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .heading {
+    margin-top: 10%;
+  }
+}

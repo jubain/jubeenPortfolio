@@ -7,10 +7,6 @@
   overflow: hidden;
 }
 
-.portfolio h1 {
-  font-size: 50px;
-}
-
 .portfolio ul {
   margin: 10px;
   padding: 0px;
@@ -84,10 +80,15 @@ font-size: 20px;
   text-align: left;
  }
 
-
+ @media only screen and (max-width: 1024px) {
+  .portfolio h1 {
+    margin-top: 10%;
+  }
+ }
 @media only screen and (max-width: 768px) {
   .portfolio h1 {
     font-size: 30px;
+    margin-top: 0;
   }
 
   .portfolio .container {
@@ -122,3 +123,19 @@ font-size: 20px;
     justify-content: center;
   }
 }
+@media only screen and (max-width: 425px) {
+  .portfolio h1 {
+    margin-top: 6%;
+  }
+ }
+ @media only screen and (max-width: 375px) {
+  .portfolio h1 {
+    margin-top: 7%;
+  }
+ }
+ @media only screen and (max-width: 320px) {
+  .portfolio h1 {
+    margin-top: 10%;
+  }
+ }
+

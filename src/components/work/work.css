@@ -6,11 +6,6 @@
   margin-top: 40%;
 }
 
-.workcontainer h1 {
-  font-size: 50px;
-  color: var(--mainColor);
-}
-
 .workcontainer .skillsContainer {
   height: 75%;
   width: 85%;

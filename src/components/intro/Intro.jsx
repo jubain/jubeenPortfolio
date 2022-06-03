@@ -9,12 +9,10 @@ function Intro() {
 
     const textRef = useRef()
 
-    const isMobile = useMediaQuery({ query: '(max-width: 425px)' })
-
     useEffect(() => {
         init(textRef.current, {
             showCursor: true,
-            strings: ["Developer", "Technology freak", "Gym freak"],
+            strings: ["Frontend Developer", "Student", "Technology Freak"],
             backDelay: 1500,
             backSpeed: 50
         })
@@ -29,14 +27,18 @@ function Intro() {
             </div>
             <div className="right">
                 <div className='wrapper'>
-                    <h2>Hi there, I'm</h2>
-                    <h1>Jubeen Amatya</h1>
-                    <h3>I am <span ref={textRef}></span></h3>
+                    <h3>Hi there, I'm</h3>
+                    <h2>Jubeen Amatya</h2>
+                    <h3>I am a <span ref={textRef}></span></h3>
+                    <p>
+                        I am an information technology undergraduate student recently graduated with a first-class honour skilled in software and website design,
+                        debugging, and tests. I am a strong player who can quickly learn and apply new technologies.
+                        I am looking to get into the world of software development utilizing my skills and knowledge.
+                    </p>
                 </div>
                 <a href='#portfolio'>
                     <KeyboardArrowDownIcon className='image' />
                 </a>
-                <Button className='cv-download-button' size={isMobile ? 'sm' : 'lg'}>Download CV</Button>
             </div>
         </div>
     );
