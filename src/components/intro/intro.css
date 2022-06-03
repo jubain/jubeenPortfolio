@@ -149,12 +149,14 @@
   .intro .right a {
     bottom: 95px;
     left: 45%;
-  }  
+  }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   .intro .left .imageContainer img {
     border-radius: 0;
   }
+}
+@media only screen and (max-width: 375px) {
   .intro .right .wrapper {
     justify-content: center;
   }
@@ -165,7 +167,7 @@
   }
   .intro .right a {
     display: none;
-  }  
+  }
 }
 @media only screen and (max-width: 320px) {
   .intro .right .wrapper {
