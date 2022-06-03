@@ -14,6 +14,7 @@
 }
 
 .app > .sections > * {
+  padding-top: 5rem;
   width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
