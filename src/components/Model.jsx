@@ -5,7 +5,7 @@ const Model = (props) => {
   return (
     <div className="container">
       <div className="imageContainer">
-        <img src={props.image} alt="image" />
+        <img src={props.image} alt="images" />
       </div>
       <div className="descContainer">
         <p>{props.desc}</p>

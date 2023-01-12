@@ -1,16 +1,10 @@
 let timeLine = [
     {
         id: 1,
-        title: "Frontend Developer",
+        title: "Full-Stack Developer",
         location: "Humanitarian Operation, London",
         description:
-            `
-            Collaborate with back-end developers and graphic designers to improve the usability,
-            Maintain and improve website,
-            Optimizing site speed and performance,
-            Monitor website performance,
-            Identify and communicate best practices`,
-        buttonText: "View Frontend Projects",
+            `I have expereince of using React to build the UI of the internal website of the company. I have created Rest API using TypeScrip, NestJS, Express and MySQL database`,
         date: "Feburary 2022 - Present",
         icon: "Work",
     },
