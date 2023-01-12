@@ -1,23 +1,39 @@
 import React, { useState, useEffect } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
-import { mobilePortfolio, designPortfolio, frontendPortfolio, backendPortfolio } from "../../data";
+import {
+  mobilePortfolio,
+  designPortfolio,
+  frontendPortfolio,
+  backendPortfolio,
+  fullStackPorfolio,
+  NetPorfolio,
+  LaravelPortfolio,
+} from "../../data";
 import "./portfolio.css";
-import '../../global.css'
+import "../../global.css";
 import { Modal } from "react-bootstrap";
 
 function Porfolio(props) {
   const list = [
     {
       id: "frontend",
-      title: "Frontend",
+      title: "React JS",
     },
     {
       id: "backend",
-      title: "Backend",
+      title: "Node JS",
+    },
+    {
+      id: "dotNet",
+      title: "ASP.NET",
+    },
+    {
+      id: "laravel",
+      title: "Laravel",
     },
     {
       id: "mobile",
-      title: "Mobile Applications",
+      title: "React Native",
     },
     {
       id: "graphic",
@@ -39,6 +55,12 @@ function Porfolio(props) {
         break;
       case "backend":
         setdata(backendPortfolio);
+        break;
+      case "dotNet":
+        setdata(NetPorfolio);
+        break;
+      case "laravel":
+        setdata(LaravelPortfolio);
         break;
       case "mobile":
         setdata(mobilePortfolio);
@@ -79,19 +101,40 @@ function Porfolio(props) {
             className="modelTitle"
             id="contained-modal-title-vcenter"
           >
-            {item != undefined ? item.title : null}
+            {item !== undefined ? item.title : null}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="modelImageContainer">
-            <img
-              className="modelImage"
-              src={item != undefined ? item.img : null}
-            />
+            {/* {item?.isVideo!==undefined ? (
+              <video
+                src={item.videoLink}
+                controls={true}
+                className="modelImage"
+              />
+            ) : (
+              <img
+                className="modelImage"
+                src={item !== undefined ? item.img : null}
+                alt="Alternate"
+              />
+            )} */}
+             <img
+                className="modelImage"
+                src={item !== undefined ? item.img : null}
+                alt="Alternate"
+              />
           </div>
 
-          <p className="modelDesc">{item != undefined ? item.desc : null}</p>
-          <a href={item != undefined ? item.link : null} target='_blank'>Link</a>
+          <p className="modelDesc">{item !== undefined ? item.desc : null}</p>
+          <a
+            href={item !== undefined ? item.link : null}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary"
+          >
+            Link
+          </a>
         </Modal.Body>
       </Modal>
 
@@ -105,7 +148,7 @@ function Porfolio(props) {
                 setitem(item);
               }}
             >
-              <img src={item.img} />
+              <img src={item.img} alt={item.title} />
               <h3>{item.title}</h3>
             </div>
           );

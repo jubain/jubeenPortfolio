@@ -1,3 +1,25 @@
+export const LaravelPortfolio = [
+  {
+    id: 1,
+    title: "Kanban Board",
+    img: "./assets/Kanban.png",
+    desc: `Created the Kanban board using PHP, Laravel in the backend, MySQL as the database and HTML and CSS in the frontend.`,
+    link: 'https://jubeen-chat-app.herokuapp.com/',
+    videoLink: "https://drive.google.com/file/d/1YUzDn97XEjbyH5vfV5G4HGCdfE9CdWch/view?usp=share_link",
+    isVideo:true
+  },
+]
+export const NetPorfolio = [
+  {
+    id: 1,
+    title: "Book Management System",
+    img: "./assets/E-Book.png",
+    desc: `I created Online Book Inventory Management System using C# and .NET Core in the backend, MS SQL Server as the datbase and React and Reduc in the frontend.`,
+    link: 'https://drive.google.com/file/d/1YUzDn97XEjbyH5vfV5G4HGCdfE9CdWch/view?usp=sharing',
+    videoLink: "https://drive.google.com/file/d/1YUzDn97XEjbyH5vfV5G4HGCdfE9CdWch/view?usp=sharing",
+    isVideo:true
+  }
+]
 export const backendPortfolio = [
   {
     id: 1,
@@ -6,7 +28,7 @@ export const backendPortfolio = [
     desc: `I created this chat web application using HTML and CSS in the frontend and Node Js in the backend.
         I have used Socket.io library to create the messaging feature.
     `,
-    link: 'https://jubeen-chat-app.herokuapp.com/'
+    link: 'https://jubeen-chat-app.herokuapp.com/',
   },
   {
     id: 2,

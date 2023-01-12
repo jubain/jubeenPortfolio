@@ -23,7 +23,7 @@
 }
 
 .workcontainer .skillsContainer .itemContainer {
-  flex: 30%;
+  flex: 20%;
   margin: 0px 15px 0px 15px;
   padding: 25px 30px;
   -webkit-box-shadow: 2px 1px 9px 1px #000000;
@@ -60,13 +60,30 @@
 .workcontainer .skillsContainer .itemContainer .bar {
   width: 100%;
 }
+@media only screen and (max-width: 1024px) {
+  .workcontainer .skillsContainer {
+    height: 85%;
+  }
+  .workcontainer .skillsContainer .itemContainer  {
+    height: 45%;
+    padding: 1rem;
+  }
+  .workcontainer .skillsContainer .itemContainer p {
+    font-size: 10px;
+    text-align: start;
+  }
+  .workcontainer .skillsContainer .itemContainer .titleContainer h4 {
+    font-size: small;
+    width: 100%;
 
+  }
+}
 @media only screen and (max-width: 768px) {
   .workcontainer .skillsContainer {
     overflow: hidden;
     margin-left: 60px;
     padding-top: 10px;
-    height: 80%;
+    height: 90%;
   }
   .workcontainer .skillsContainer .itemContainer p {
     font-size: 10px;
