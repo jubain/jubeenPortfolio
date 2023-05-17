@@ -67,6 +67,13 @@ export const mobilePortfolio = [
     desc: "This is my on going undergradute project, which is a cross platform mobile applicaiont. I have used React Native (Expo) for the frontend and firebase in the backend. This app lets user book doctor appointments and have chat with the doctor.",
     link: 'https://github.com/jubain/E-Doctor-.git'
   },
+  {
+    id: 2,
+    title: "Book My Event",
+    img: "./assets/bookmyevent.png",
+    desc: "Created Cross platform online venue and event booking app using React Native, Nest JS, MySQL and AWS.",
+    link: 'https://github.com/jubain/E-Doctor-.git'
+  },
 ];
 
 export const designPortfolio = [

@@ -1,4 +1,8 @@
 @import url("../../global.css");
+.vertical-timeline-element-content-arrow {
+  background-color: white !important;
+  color: white !important;
+}
 .timeline {
   background: var(--mainColor);
   font-size: 16px;
@@ -83,41 +87,71 @@ h3 {
 .schoolButton:hover {
   background-color: #f3bc3c;
 }
+
 @media only screen and (max-width: 1440px) {
- .customDate{
-  color: gray;
-  font-size: small;
- }
-}
-@media only screen and (max-width: 1024px) {
+  .customDate {
+    color: gray;
+    font-size: small;
+  }
+  .timeline {
+    max-height: min-content;
+    overflow: hidden;
+  }
+  #description {
+    font-size: 12px;
+  }
   .vertical-timeline-element-content {
     height: 100%;
-    overflow: hidden;
   }
   span.vertical-timeline-element-date {
     color: var(--mainColor);
     font-size: 20px;
   }
-  .vertical-timeline-element-icon{
+}
+@media only screen and (max-width: 1024px) {
+  .timeline {
+    max-height: min-content;
+    overflow: hidden;
+  }
+  .vertical-timeline-element-content {
+    height: 100%;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+  span.vertical-timeline-element-date {
+    color: var(--mainColor);
+    font-size: 20px;
+  }
+  .vertical-timeline-element-icon {
     margin-left: 5px;
+  }
+  #description {
+    font-size: 12px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .timeline{
+    overflow: scroll;
+    height: min-content;
+  }
   .timeline .timelineContainer {
     overflow: hidden;
   }
   .timeline .timelineContainer .verticalTimeline {
-    height: 22%;
+    height: 20%;
     overflow: hidden;
     border-radius: 10px;
     width: 95%;
-    margin-bottom: 30px;
+  }
+  #description{
+    font-size: 10px;
   }
   .vertical-timeline-element-date {
     display: block !important;
     float: none !important;
     margin-top: 0em;
+    font-size: 10px !important;
   }
   .icon {
     margin-left: 4px;
@@ -126,10 +160,20 @@ h3 {
   .title {
     font-size: 30px;
   }
+  .vertical-timeline-element-title{
+    font-size: 14px !important;
+  }
+  .vertical-timeline-element-subtitle{
+    font-size: 12px !important;
+  }
 }
 
 @media only screen and (max-width: 425px) {
-
+  .timeline {
+    max-height: min-content;
+    overflow: scroll;
+    /* margin-top: 10rem; */
+  }
   .vertical-timeline-element-content {
     padding: 3em 2em !important;
     height: 100%;
@@ -137,6 +181,7 @@ h3 {
   }
   .timeline .timelineContainer .verticalTimeline {
     overflow: hidden;
+    height: 21%;
   }
   .timeline .timelineContainer .verticalTimeline h3 {
     font-size: 12px;
@@ -155,6 +200,9 @@ h3 {
   }
   .vertical-timeline-element-date {
     margin-top: 0;
-    font-size: 12px;
+    font-size: 10px !important;
+  }
+  #description {
+    font-size: 10px;
   }
 }

@@ -23,7 +23,7 @@
 }
 
 .workcontainer .skillsContainer .itemContainer {
-  flex: 20%;
+  flex: 15%;
   margin: 0px 15px 0px 15px;
   padding: 25px 30px;
   -webkit-box-shadow: 2px 1px 9px 1px #000000;
@@ -62,11 +62,13 @@
 }
 @media only screen and (max-width: 1024px) {
   .workcontainer .skillsContainer {
-    height: 85%;
+    height: 90%;
   }
-  .workcontainer .skillsContainer .itemContainer  {
-    height: 45%;
+  .workcontainer .skillsContainer .itemContainer {
+    flex: 20%;
+    height: 30%;
     padding: 1rem;
+    margin-top: .5rem;
   }
   .workcontainer .skillsContainer .itemContainer p {
     font-size: 10px;
@@ -75,7 +77,6 @@
   .workcontainer .skillsContainer .itemContainer .titleContainer h4 {
     font-size: small;
     width: 100%;
-
   }
 }
 @media only screen and (max-width: 768px) {
@@ -83,7 +84,7 @@
     overflow: hidden;
     margin-left: 60px;
     padding-top: 10px;
-    height: 90%;
+    height: 100%;
   }
   .workcontainer .skillsContainer .itemContainer p {
     font-size: 10px;

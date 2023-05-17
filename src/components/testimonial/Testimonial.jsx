@@ -22,7 +22,7 @@ import FastfoodIcon from "@mui/icons-material/Fastfood";
 function Testimonial(props) {
   let workIconStyle = { background: "#06d6a0" };
   let schoolIconStyle = { background: "#f9c74f" };
-  const isLaptop = useMediaQuery({ query: "(max-width: 1440px)" });
+  const isLaptop = useMediaQuery({ query: "(min-width: 1440px)" });
   return (
     <div className="timeline" id="testimonial">
       <h1 className="heading title">TIMELINE</h1>
@@ -42,10 +42,6 @@ function Testimonial(props) {
               dateClassName="date"
               icon={isWorkIcon ? <WorkIcon fontSize="12" /> : <SchoolIcon />}
               contentStyle={{}}
-              contentArrowStyle={{
-                borderLeft: "7px solid  rgb(33, 150, 243)",
-                color: "white",
-              }}
               iconStyle={isWorkIcon ? workIconStyle : schoolIconStyle}
               iconClassName="icon"
             >
