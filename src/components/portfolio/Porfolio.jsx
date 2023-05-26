@@ -5,9 +5,9 @@ import {
   designPortfolio,
   frontendPortfolio,
   backendPortfolio,
-  fullStackPorfolio,
   NetPorfolio,
   LaravelPortfolio,
+  freelancingPortfolio,
 } from "../../data";
 import "./portfolio.css";
 import "../../global.css";
@@ -34,6 +34,10 @@ function Porfolio(props) {
     {
       id: "mobile",
       title: "React Native",
+    },
+    {
+      id: "freelancing",
+      title: "Freelancing",
     },
     {
       id: "graphic",
@@ -65,6 +69,9 @@ function Porfolio(props) {
       case "mobile":
         setdata(mobilePortfolio);
         break;
+      case "freelancing":
+        setdata(freelancingPortfolio);
+        break;
       case "graphic":
         setdata(designPortfolio);
         break;
@@ -73,6 +80,7 @@ function Porfolio(props) {
         break;
     }
   }, [selected]);
+  console.log(item);
 
   return (
     <div className="portfolio" id="portfolio">
@@ -106,24 +114,28 @@ function Porfolio(props) {
         </Modal.Header>
         <Modal.Body>
           <div className="modelImageContainer">
-            {/* {item?.isVideo!==undefined ? (
-              <video
-                src={item.videoLink}
-                controls={true}
-                className="modelImage"
-              />
+            {item?.video ? (
+              <iframe
+                src={item.video}
+                className="portfolio_video"
+                frameborder="0"
+                allowfullscreen
+                contentEditable="false"
+                title={item.id}
+                sandbox="allow-scripts allow-same-origin"
+              ></iframe>
             ) : (
               <img
                 className="modelImage"
                 src={item !== undefined ? item.img : null}
                 alt="Alternate"
               />
-            )} */}
-             <img
+            )}
+            {/* <img
                 className="modelImage"
                 src={item !== undefined ? item.img : null}
                 alt="Alternate"
-              />
+              /> */}
           </div>
 
           <p className="modelDesc">{item !== undefined ? item.desc : null}</p>

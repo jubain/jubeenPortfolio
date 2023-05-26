@@ -10,25 +10,26 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
-import { FaLink } from 'react-icons/fa'
+import { FaLink } from "react-icons/fa";
 
 function App() {
   const [menuOpen, setmenuOpen] = useState(false);
 
   const [onMouseEnter, setOnMouseEnter] = useState(false);
 
-  const [githubData, setGithubData] = useState([])
-  const [githubUser, setGithubUser] = useState("jubain")
+  const [githubData, setGithubData] = useState([]);
+  const [githubUser, setGithubUser] = useState("jubain");
 
-  const isMobile = useMediaQuery({ query: '(max-width: 425px)' })
-  const isTablet = useMediaQuery({ query: '(max-width: 768px)' })
+  const isMobile = useMediaQuery({ query: "(max-width: 425px)" });
+  const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
 
   const fetchData = () => {
-    return fetch(`https://api.github.com/repos/${githubUser}/CV/contents`)
-      .then((response) => {
-        console.log(response.json())
+    return fetch(`https://api.github.com/repos/${githubUser}/CV/contents`).then(
+      (response) => {
+        console.log(response.json());
         //return response.blob()
-      })
+      }
+    );
     // .then((blob) => {
     //   const url = window.URL.createObjectURL(
     //     new Blob([blob]),
@@ -50,10 +51,10 @@ function App() {
     //   link.parentNode.removeChild(link);
 
     // });
-  }
+  };
   useEffect(() => {
-    fetchData()
-  }, [])
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -67,22 +68,21 @@ function App() {
           <Testimonial fetchData={fetchData} />
           <Contact fetchData={fetchData} />
         </div>
-
       </div>
-      <a href="https://github.com/jubain/CV/blob/main/Jubeen%20Amatya%20CV.pdf"
-      target="blank"
-       style={{
-        position: "absolute",
-        bottom: "1%",
-        right: '1%'
-      }}>
-        <Button
-          variant="primary"
-          size={isMobile || isTablet ? "sm" : "lg"}
-        >
-          <FaLink /> Link to my CV</Button>
+      <a
+        // href="https://github.com/jubain/CV/blob/main/Jubeen%20Amatya%20CV.pdf"
+        href="https://1drv.ms/w/s!AsLISEZRozcujFSP0IE3q_vOQyF_?e=7dqbWD"
+        target="blank"
+        style={{
+          position: "absolute",
+          bottom: "1%",
+          right: "1%",
+        }}
+      >
+        <Button variant="primary" size={isMobile || isTablet ? "sm" : "lg"}>
+          <FaLink /> Link to my CV
+        </Button>
       </a>
-
     </>
   );
 }

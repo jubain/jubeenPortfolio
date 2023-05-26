@@ -86,6 +86,14 @@ const data = [
     progress: 90,
     label: label,
   },
+  {
+    id: 11,
+    title: "AWS",
+    img: "https://toppng.com/uploads/preview/amazon-web-services-11550113695pg4ppffsio.png",
+    desc: "Have used AWS in my university project and in my internship, some of the services i have used are EC2, Light sail, IAM, S3.",
+    progress: 90,
+    label: "6/10",
+  },
 ];
 export default function Work() {
   const isMobile = useMediaQuery({ query: "(max-width: 425px)" });
