@@ -116,13 +116,12 @@ function Porfolio(props) {
           <div className="modelImageContainer">
             {item?.video ? (
               <iframe
-                src={item.video}
-                className="portfolio_video"
+                src={item?.video}
+                width="320"
+                height="180"
                 frameborder="0"
                 allowfullscreen
-                contentEditable="false"
-                title={item.id}
-                sandbox="allow-scripts allow-same-origin"
+                title="Book my event"
               ></iframe>
             ) : (
               <img

@@ -73,7 +73,7 @@ export const mobilePortfolio = [
     id: 2,
     title: "Book My Event",
     img: "./assets/bookmyevent.png",
-    video: "https://1drv.ms/v/s!AsLISEZRozcujFaY1J8C-Tgjwkxk?e=eq698c?showinfo=0&controls=0",
+    video: "https://onedrive.live.com/embed?resid=2E37A3514648C8C2%211622&authkey=!AF7cO1_xC2Ke_bk",
     desc: "Created Cross platform online venue and event booking app using React Native, Nest JS, MySQL and AWS.",
     link: "https://github.com/jubain/E-Doctor-.git",
   },
