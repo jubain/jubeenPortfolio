@@ -7,7 +7,6 @@ export const LaravelPortfolio = [
     link: "https://jubeen-chat-app.herokuapp.com/",
     videoLink:
       "https://drive.google.com/file/d/1YUzDn97XEjbyH5vfV5G4HGCdfE9CdWch/view?usp=share_link",
-    isVideo: true,
   },
 ];
 export const NetPorfolio = [
@@ -17,9 +16,8 @@ export const NetPorfolio = [
     img: "./assets/E-Book.png",
     desc: `I created Online Book Inventory Management System using C# and .NET Core in the backend, MS SQL Server as the datbase and React and Reduc in the frontend.`,
     link: "https://drive.google.com/file/d/1YUzDn97XEjbyH5vfV5G4HGCdfE9CdWch/view?usp=sharing",
-    videoLink:
-      "https://drive.google.com/file/d/1YUzDn97XEjbyH5vfV5G4HGCdfE9CdWch/view?usp=sharing",
-    isVideo: true,
+    video:
+      "https://onedrive.live.com/embed?cid=2E37A3514648C8C2&resid=2E37A3514648C8C2%211687&authkey=AB5m1oOkVEyEjK0",
   },
 ];
 export const backendPortfolio = [
@@ -73,7 +71,8 @@ export const mobilePortfolio = [
     id: 2,
     title: "Book My Event",
     img: "./assets/bookmyevent.png",
-    video: "https://onedrive.live.com/embed?resid=2E37A3514648C8C2%211622&authkey=!AF7cO1_xC2Ke_bk",
+    video:
+      "https://onedrive.live.com/embed?resid=2E37A3514648C8C2%211622&authkey=!AF7cO1_xC2Ke_bk",
     desc: "Created Cross platform online venue and event booking app using React Native, Nest JS, MySQL and AWS.",
     link: "https://github.com/jubain/E-Doctor-.git",
   },
