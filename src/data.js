@@ -19,6 +19,13 @@ export const NetPorfolio = [
     video:
       "https://onedrive.live.com/embed?cid=2E37A3514648C8C2&resid=2E37A3514648C8C2%211687&authkey=AB5m1oOkVEyEjK0",
   },
+  {
+    id: 2,
+    title: "ATM Console App",
+    img: "./assets/ATM.png",
+    desc: `Using C# and Mysql I created a ATM Console application.`,
+    link: "https://github.com/jubain/ATM_CSHARP.git",
+  },
 ];
 export const backendPortfolio = [
   {
@@ -45,13 +52,21 @@ export const backendPortfolio = [
 export const frontendPortfolio = [
   {
     id: 1,
+    title: "Food Menu",
+    img: "./assets/FoodMenu.png",
+    desc: "Using React, HTML, CSS, Redux and firebase I created a food menu web app that lets you add your favorite food from the list into your basket.",
+    hostedLink: "https://react-food-basket.netlify.app",
+    link: "https://react-food-basket.netlify.app",
+  },
+  {
+    id: 2,
     title: "Tindog",
     img: "./assets/tindog.png",
     desc: "Create a single page website for tinder for dogs as a practice using pure HTML and CSS",
     link: "https://github.com/jubain/tindog",
   },
   {
-    id: 2,
+    id: 3,
     title: "Meetup",
     img: "./assets/meetup.png",
     desc: "Created a blog page using React JS, Next JS, HTML and CSS",
@@ -73,8 +88,9 @@ export const mobilePortfolio = [
     img: "./assets/bookmyevent.png",
     video:
       "https://onedrive.live.com/embed?resid=2E37A3514648C8C2%211622&authkey=!AF7cO1_xC2Ke_bk",
-    desc: "Created Cross platform online venue and event booking app using React Native, Nest JS, MySQL and AWS.",
+    desc: "Created a Cross platform online venue and event booking mobile app using React Native and Redux Toolkit in the frontend and Nest JS, MySQL, WebSocket, and AWS S3 in the backend to create Web API to be fetched by the fronted. Moreover I used Heroku and CircleCI to implement CI/CD and host. ",
     link: "https://github.com/jubain/E-Doctor-.git",
+    hostedLink: "https://book-my-event-server-cb070f500b1a.herokuapp.com/api",
   },
 ];
 

@@ -25,7 +25,7 @@ function Porfolio(props) {
     },
     {
       id: "dotNet",
-      title: "ASP.NET",
+      title: "ASP.NET/C#",
     },
     {
       id: "laravel",
@@ -80,7 +80,6 @@ function Porfolio(props) {
         break;
     }
   }, [selected]);
-  console.log(item);
 
   return (
     <div className="portfolio" id="portfolio">
@@ -93,6 +92,7 @@ function Porfolio(props) {
               active={selected === item.id}
               setselected={setselected}
               id={item.id}
+              key={item.id}
             />
           );
         })}
@@ -138,14 +138,27 @@ function Porfolio(props) {
           </div>
 
           <p className="modelDesc">{item !== undefined ? item.desc : null}</p>
-          <a
-            href={item !== undefined ? item.link : null}
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-primary"
-          >
-            Link
-          </a>
+          <div className="bottom-button-container">
+            <a
+              href={item !== undefined ? item.link : null}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary"
+            >
+              Link
+            </a>
+            {item?.hostedLink && (
+              <a
+                href={item.hostedLink}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary"
+                style={{ marginLeft: "1rem" }}
+              >
+                Hosted Link
+              </a>
+            )}
+          </div>
         </Modal.Body>
       </Modal>
 
@@ -158,6 +171,7 @@ function Porfolio(props) {
                 setModalShow(true);
                 setitem(item);
               }}
+              key={item.id}
             >
               <img src={item.img} alt={item.title} />
               <h3>{item.title}</h3>
