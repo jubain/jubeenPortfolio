@@ -92,6 +92,16 @@ export const mobilePortfolio = [
     link: "https://github.com/jubain/E-Doctor-.git",
     hostedLink: "https://book-my-event-server-cb070f500b1a.herokuapp.com/api",
   },
+  {
+    id: 3,
+    title: "Coupon",
+    img: "./assets/coupon.jpg",
+    video:
+      "https://onedrive.live.com/embed?resid=2E37A3514648C8C2%211853&authkey=!AGoNsnOnMlk5k9w",
+    desc: "This app lets you upload coupons of different stores and use them. I created this using React Native and Firebase",
+    link: "https://github.com/jubain/CouponApp.git",
+    hostedLink: "https://github.com/jubain/CouponApp.git",
+  },
 ];
 
 export const freelancingPortfolio = [
